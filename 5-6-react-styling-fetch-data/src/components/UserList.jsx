@@ -7,9 +7,8 @@ function UserList({ users, onUserClick }) {
   if (users.length === 0) {
     return (
       <Alert variant="info">
-        {/* TODO 1.3: Change this Alert to variant="info" and exact message from lab instructions */}
-        No users found matching your search criteria.
-      </Alert>
+      No users found matching your search criteria.
+    </Alert>
     );
   }
 
@@ -22,7 +21,7 @@ function UserList({ users, onUserClick }) {
     <Col key={user.id} md={6} lg={4} className="mb-4">
       <UserCard user={user} onUserClick={onUserClick} />
     </Col>
-    
+
   ))}
     </Row>
   );
