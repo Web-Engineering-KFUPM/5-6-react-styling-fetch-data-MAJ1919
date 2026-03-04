@@ -238,7 +238,7 @@ export default function App() {
      Implement filtering logic inside this useEffect.
      Dependency array MUST be: [searchTerm, users]
      ========================================================= */
-  useEffect(() => {
+ useEffect(() => {
   if (searchTerm === "") {
     setFilteredUsers(users);
   } else {
@@ -248,8 +248,7 @@ export default function App() {
 
     setFilteredUsers(filtered);
   }
-    // TODO 2.2: Implement filtering users here (see lab instructions)
-  }, [searchTerm, users]);
+}, [searchTerm, users]);
 
   // Modal handlers (already complete)
   function handleUserClick(user) {
